@@ -43,3 +43,52 @@ ul.navbar li a {
 ul.navbar li a:hover {
     color: rgb(0, 115, 204);
 }
+
+.main-banner {
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.banner-image {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image within its container */
+}
+
+.secondary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-1 {
+    font-size: 3rem;
+    color: #424242;
+}
+
+.p-2 {
+    color: gray;
+    font-size: 1.5rem;
+    margin-top: -3.2rem;
+}
+
+.button-1 {
+    padding: 10px 35px;
+    background-color: #397dd1;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none; 
+
+}
