@@ -1,0 +1,27 @@
+/*
+  Write a function `findLargestElement` that takes an array of numbers and returns the largest element.
+  Example:
+  - Input: [3, 7, 2, 9, 1]
+  - Output: 9
+*/
+
+function findLargestElement(numbers) {
+    if (numbers.length === 0) {
+        // Handle the case where the array is empty
+        return undefined;
+    }
+
+    let largestElement = numbers[0]; // Assume the first element is the largest
+
+    for (let i = 1; i < numbers.length; i++) {
+        // Compare each element with the current largestElement
+        if (numbers[i] > largestElement) {
+        largestElement = numbers[i]; // Update largestElement if a larger element is found
+        }
+    }
+
+    return largestElement;
+}
+
+const numbers = [3, 7, 2, 9, 1];
+console.log(findLargestElement(numbers)); // Output: 9
