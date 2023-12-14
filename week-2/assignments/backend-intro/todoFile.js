@@ -6,6 +6,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
+const port = 4000; 
+
 // Utility function to find the index of an item with a specific id in an array
 function findIndex(arr, id) {
   for (let i = 0; i < arr.length; i++) {
@@ -114,4 +116,6 @@ app.use((req, res, next) => {
   res.status(404).send();
 });
 
-module.exports = app;
+app.listen(port, () => {
+    console.log("Port running on", port); 
+})
