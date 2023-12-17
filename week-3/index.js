@@ -30,7 +30,7 @@ function userExists(username, password) {
     // hard todo - try to use the find function in js
     let userExists = false;
     for (let i = 0; i<ALL_USERS.length; i++) {
-        if (ALL_USERS[i].username == username && ALL_USERS[i].password == password) {
+        if (ALL_USERS[i].username === username && ALL_USERS[i].password === password) {
             userExists = true;
         }
     }
