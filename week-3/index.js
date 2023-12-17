@@ -60,11 +60,7 @@ app.get("/users", function (req, res) {
     // return a list of users other than this username
     res.json({
         users: ALL_USERS.filter(function(value) {
-            if (value.username == username) {
-                return false
-            } else {
-                return true;
-            }
+            return value.username !== username;
         })
     })
 });
