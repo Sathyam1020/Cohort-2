@@ -44,5 +44,5 @@ const transactions = [
     { id: 4, timestamp: 1656076800003, price: 30, category: 'Clothing', itemName: 'T-Shirt' },
   ];
   
-  console.log(calculateTotalSpentByCategory(transactions));
+console.log(calculateTotalSpentByCategory(transactions));
   
